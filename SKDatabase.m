@@ -369,6 +369,13 @@
 	
 }
 
+- (NSString *)escapeString:(NSString *)dirtyString{
+	NSString *cleanString = [dirtyString stringByReplacingOccurrencesOfString:@"'" withString:@"''"];
+	[cleanString autorelease];
+	
+	return cleanString;
+}
+
 // requirements for closing things down
 
 - (void)dealloc {

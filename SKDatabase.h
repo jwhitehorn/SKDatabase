@@ -54,6 +54,8 @@
 
 - (BOOL)runDynamicSQL:(NSString *)sql forTable:(NSString *)table;
 
+- (NSString *)escapeString:(NSString *)dirtyString;
+
 @end
 
 
