@@ -6,25 +6,96 @@
 	objectVersion = 45;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		9630022412D960C300413489 /* Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9630022812D960C500413489 /* Build configuration list for PBXAggregateTarget "Universal" */;
+			buildPhases = (
+				9630025C12D9639C00413489 /* ShellScript */,
+			);
+			dependencies = (
+				9630022A12D960CC00413489 /* PBXTargetDependency */,
+				9630023B12D961B900413489 /* PBXTargetDependency */,
+				9630023D12D961BD00413489 /* PBXTargetDependency */,
+			);
+			name = Universal;
+			productName = Universal;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		9630013912D8FA2600413489 /* SKDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 9630013712D8FA2500413489 /* SKDatabase.h */; };
+		9630013912D8FA2600413489 /* SKDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 9630013712D8FA2500413489 /* SKDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9630013A12D8FA2600413489 /* SKDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9630013812D8FA2500413489 /* SKDatabase.m */; };
 		9630018F12D8FA5D00413489 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9630018E12D8FA5D00413489 /* libsqlite3.0.dylib */; };
+		9630024812D962AE00413489 /* SKDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 9630013712D8FA2500413489 /* SKDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9630024912D962AE00413489 /* SKDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 9630013712D8FA2500413489 /* SKDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9630024A12D962B300413489 /* SKDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9630013812D8FA2500413489 /* SKDatabase.m */; };
+		9630024B12D962B400413489 /* SKDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9630013812D8FA2500413489 /* SKDatabase.m */; };
+		9630024C12D962B900413489 /* SKDatabase_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* SKDatabase_Prefix.pch */; };
+		9630024D12D962BB00413489 /* SKDatabase_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* SKDatabase_Prefix.pch */; };
+		9630024E12D962BF00413489 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9630018E12D8FA5D00413489 /* libsqlite3.0.dylib */; };
+		9630024F12D962C000413489 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9630018E12D8FA5D00413489 /* libsqlite3.0.dylib */; };
+		9630025012D962C400413489 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		9630025112D962C500413489 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		AA747D9F0F9514B9006C5449 /* SKDatabase_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* SKDatabase_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9630022912D960CC00413489 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D /* SKDatabase */;
+			remoteInfo = SKDatabase;
+		};
+		9630023A12D961B900413489 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9630022F12D9616C00413489 /* SKDatabase-iOS sim */;
+			remoteInfo = "SKDatabase-iOS sim";
+		};
+		9630023C12D961BD00413489 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9630023612D961A000413489 /* SKDatabase-Mac */;
+			remoteInfo = "SKDatabase-Mac";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9630013712D8FA2500413489 /* SKDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKDatabase.h; sourceTree = SOURCE_ROOT; };
 		9630013812D8FA2500413489 /* SKDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDatabase.m; sourceTree = SOURCE_ROOT; };
 		9630018E12D8FA5D00413489 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		9630019D12D8FBB300413489 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		9630023012D9616C00413489 /* libSKDatabase-iOS sim.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libSKDatabase-iOS sim.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9630023712D961A000413489 /* libSKDatabase-Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libSKDatabase-Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA747D9E0F9514B9006C5449 /* SKDatabase_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKDatabase_Prefix.pch; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libSKDatabase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSKDatabase.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9630022E12D9616C00413489 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9630024E12D962BF00413489 /* libsqlite3.0.dylib in Frameworks */,
+				9630025012D962C400413489 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9630023512D961A000413489 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9630024F12D962C000413489 /* libsqlite3.0.dylib in Frameworks */,
+				9630025112D962C500413489 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2AAC07C0554694100DB518D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				D2AAC07E0554694100DB518D /* libSKDatabase.a */,
+				9630023012D9616C00413489 /* libSKDatabase-iOS sim.a */,
+				9630023712D961A000413489 /* libSKDatabase-Mac.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +143,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		9630022C12D9616C00413489 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9630024812D962AE00413489 /* SKDatabase.h in Headers */,
+				9630024C12D962B900413489 /* SKDatabase_Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9630023312D961A000413489 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9630024912D962AE00413489 /* SKDatabase.h in Headers */,
+				9630024D12D962BB00413489 /* SKDatabase_Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2AAC07A0554694100DB518D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,9 +173,43 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D2AAC07D0554694100DB518D /* SKDatabase */ = {
+		9630022F12D9616C00413489 /* SKDatabase-iOS sim */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "SKDatabase" */;
+			buildConfigurationList = 9630023F12D961DE00413489 /* Build configuration list for PBXNativeTarget "SKDatabase-iOS sim" */;
+			buildPhases = (
+				9630022C12D9616C00413489 /* Headers */,
+				9630022D12D9616C00413489 /* Sources */,
+				9630022E12D9616C00413489 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SKDatabase-iOS sim";
+			productName = "SKDatabase-iOS sim";
+			productReference = 9630023012D9616C00413489 /* libSKDatabase-iOS sim.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9630023612D961A000413489 /* SKDatabase-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9630024012D961DE00413489 /* Build configuration list for PBXNativeTarget "SKDatabase-Mac" */;
+			buildPhases = (
+				9630023312D961A000413489 /* Headers */,
+				9630023412D961A000413489 /* Sources */,
+				9630023512D961A000413489 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SKDatabase-Mac";
+			productName = "SKDatabase-Mac";
+			productReference = 9630023712D961A000413489 /* libSKDatabase-Mac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D2AAC07D0554694100DB518D /* SKDatabase-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "SKDatabase-iOS" */;
 			buildPhases = (
 				D2AAC07A0554694100DB518D /* Headers */,
 				D2AAC07B0554694100DB518D /* Sources */,
@@ -94,7 +219,7 @@
 			);
 			dependencies = (
 			);
-			name = SKDatabase;
+			name = "SKDatabase-iOS";
 			productName = SKDatabase;
 			productReference = D2AAC07E0554694100DB518D /* libSKDatabase.a */;
 			productType = "com.apple.product-type.library.static";
@@ -119,12 +244,48 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D2AAC07D0554694100DB518D /* SKDatabase */,
+				9630022412D960C300413489 /* Universal */,
+				D2AAC07D0554694100DB518D /* SKDatabase-iOS */,
+				9630022F12D9616C00413489 /* SKDatabase-iOS sim */,
+				9630023612D961A000413489 /* SKDatabase-Mac */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9630025C12D9639C00413489 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			comments = "# make a new output folder\nmkdir -p ${PROJECT_DIR}/build/${BUILD_STYLE}-iphoneos/DTUtilities\n \n# combine lib files for various platforms into one\nlipo -create \"${PROJECT_DIR}/build/${BUILD_STYLE}-iphoneos/libSKDatabase.a\" \"${PROJECT_DIR}/build/${BUILD_STYLE}-iphonesimulator/libSKDatabase.a\" -output \"${PROJECT_DIR}/build/${BUILD_STYLE}-iphoneos/SKDatabase/libSKDatabase-${BUILD_STYLE}.a\"";
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		9630022D12D9616C00413489 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9630024A12D962B300413489 /* SKDatabase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9630023412D961A000413489 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9630024B12D962B400413489 /* SKDatabase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2AAC07B0554694100DB518D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,6 +295,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9630022A12D960CC00413489 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* SKDatabase-iOS */;
+			targetProxy = 9630022912D960CC00413489 /* PBXContainerItemProxy */;
+		};
+		9630023B12D961B900413489 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9630022F12D9616C00413489 /* SKDatabase-iOS sim */;
+			targetProxy = 9630023A12D961B900413489 /* PBXContainerItemProxy */;
+		};
+		9630023D12D961BD00413489 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9630023612D961A000413489 /* SKDatabase-Mac */;
+			targetProxy = 9630023C12D961BD00413489 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1DEB921F08733DC00010E9CD /* Debug */ = {
@@ -151,6 +330,7 @@
 				GCC_PREFIX_HEADER = SKDatabase_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = SKDatabase;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -165,6 +345,7 @@
 				GCC_PREFIX_HEADER = SKDatabase_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = SKDatabase;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -195,10 +376,85 @@
 			};
 			name = Release;
 		};
+		9630022512D960C300413489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Universal;
+			};
+			name = Debug;
+		};
+		9630022612D960C300413489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Universal;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		9630023112D9616C00413489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = "SKDatabase-iOS sim";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9630023212D9616C00413489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = "SKDatabase-iOS sim";
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		9630023812D961A000413489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = "SKDatabase-Mac";
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		9630023912D961A000413489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = "SKDatabase-Mac";
+				SDKROOT = macosx10.6;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "SKDatabase" */ = {
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "SKDatabase-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB921F08733DC00010E9CD /* Debug */,
@@ -212,6 +468,33 @@
 			buildConfigurations = (
 				1DEB922308733DC00010E9CD /* Debug */,
 				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9630022812D960C500413489 /* Build configuration list for PBXAggregateTarget "Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9630022512D960C300413489 /* Debug */,
+				9630022612D960C300413489 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9630023F12D961DE00413489 /* Build configuration list for PBXNativeTarget "SKDatabase-iOS sim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9630023112D9616C00413489 /* Debug */,
+				9630023212D9616C00413489 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9630024012D961DE00413489 /* Build configuration list for PBXNativeTarget "SKDatabase-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9630023812D961A000413489 /* Debug */,
+				9630023912D961A000413489 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
