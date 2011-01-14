@@ -46,21 +46,21 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D /* SKDatabase */;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = SKDatabase;
 		};
 		9630023A12D961B900413489 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9630022F12D9616C00413489 /* SKDatabase-iOS sim */;
+			remoteGlobalIDString = 9630022F12D9616C00413489;
 			remoteInfo = "SKDatabase-iOS sim";
 		};
 		9630023C12D961BD00413489 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9630023612D961A000413489 /* SKDatabase-Mac */;
+			remoteGlobalIDString = 9630023612D961A000413489;
 			remoteInfo = "SKDatabase-Mac";
 		};
 /* End PBXContainerItemProxy section */
@@ -265,7 +265,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
+			shellScript = "# make a new output folder\nmkdir -p ${PROJECT_DIR}/build/${BUILD_STYLE}-iphoneos/SKDatabase\n \n# combine lib files for various platforms into one\nlipo -create \"${PROJECT_DIR}/build/${BUILD_STYLE}-iphoneos/libSKDatabase.a\" \"${PROJECT_DIR}/build/${BUILD_STYLE}-iphonesimulator/libSKDatabase.a\" -output \"${PROJECT_DIR}/build/${BUILD_STYLE}-iphoneos/SKDatabase/libSKDatabase-${BUILD_STYLE}.a\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
