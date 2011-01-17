@@ -19,7 +19,7 @@
 // Two ways to init: one if you're just SELECTing from a database, one if you're UPDATing
 // and or INSERTing
 
-- (id)initWithFile:(NSString *)dbFile {
+- (id)initWithReadOnlyFile:(NSString *)dbFile {
 	if (self = [super init]) {
 		
 		NSString *paths = [[NSBundle mainBundle] resourcePath];
@@ -34,7 +34,7 @@
 	return self;	
 }
 
-- (id)initWithDynamicFile:(NSString *)dbFile {
+- (id)initWithFile:(NSString *)dbFile {
 	if (self = [super init]) {
 		
 		NSArray *docPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);

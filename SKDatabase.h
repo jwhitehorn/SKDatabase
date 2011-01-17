@@ -28,7 +28,7 @@
 @property BOOL dynamic;
 
 - (id)initWithFile:(NSString *)dbFile;
-- (id)initWithDynamicFile:(NSString *)dbFile;
+- (id)initWithReadOnlyFile:(NSString *)dbFile;
 - (void)close;
 
 - (sqlite3_stmt *)prepare:(NSString *)sql;
