@@ -8,3 +8,7 @@ If memory serves me correctly the original author released it into the public do
 
 I have also made some of my own (minor) modifications to the library, and I also intend
 to contribute to the code base going forward (hence the github repo).
+
+Getting Started:
+
+To use this library you will also need to reference the libsqlite3.0.dylib library.
