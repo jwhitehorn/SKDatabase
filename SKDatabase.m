@@ -347,6 +347,11 @@
 	[self runDynamicSQL:sql forTable:table];
 }
 
+- (void) deleteAllFrom:(NSString *)table{
+	NSString *sql = [NSString stringWithFormat:@"DELETE FROM %@", table];
+	[self runDynamicSQL:sql forTable:table];
+}
+
 // INSERT/UPDATE/DELETE Subroutines
 
 - (BOOL)runDynamicSQL:(NSString *)sql forTable:(NSString *)table {

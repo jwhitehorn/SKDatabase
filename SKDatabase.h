@@ -51,6 +51,7 @@
 - (void)updateSQL:(NSString *)sql forTable:(NSString *)table;
 
 - (void)deleteWhere:(NSString *)where forTable:(NSString *)table;
+- (void) deleteAllFrom:(NSString *)table;
 
 - (BOOL)runDynamicSQL:(NSString *)sql forTable:(NSString *)table;
 
