@@ -29,6 +29,8 @@
 
 - (id)initWithFile:(NSString *)dbFile;
 - (id)initWithReadOnlyFile:(NSString *)dbFile;
+- (id)initWithData:(NSData *)data andFile:(NSString *)dbFile;
+
 - (void)close;
 
 - (sqlite3_stmt *)prepare:(NSString *)sql;

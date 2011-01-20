@@ -60,6 +60,24 @@
 	return self;	
 }
 
+- (id)initWithData:(NSData *)data andFile:(NSString *)dbFile {
+	if (self = [super init]) {
+		
+		NSArray *docPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+		NSString *docDir = [docPaths objectAtIndex:0];
+		NSString *docPath = [docDir stringByAppendingPathComponent:dbFile]; 
+		bool success = [data writeToFile:docPath atomically:YES];
+		
+		NSAssert1(success,[NSString stringWithString:@"Failed to save database into documents path"], nil);
+		
+		int result = sqlite3_open([docPath UTF8String], &dbh);
+		NSAssert1(SQLITE_OK == result, NSLocalizedStringFromTable(@"Unable to open the sqlite database (%@).", @"Database", @""), [NSString stringWithUTF8String:sqlite3_errmsg(dbh)]);	
+		self.dynamic = YES;
+	}
+	
+	return self;	
+}
+
 // Users should never need to call prepare
 
 - (sqlite3_stmt *)prepare:(NSString *)sql {
