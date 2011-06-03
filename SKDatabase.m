@@ -116,7 +116,11 @@
 					result = [NSNumber numberWithFloat:(float)sqlite3_column_double(statement,i)];					
 				} else {
 					if((char *)sqlite3_column_text(statement,i) != NULL){
-						result = [NSString stringWithUTF8String:(char *)sqlite3_column_text(statement,i)];
+                        result = [[NSString alloc] initWithUTF8String:(char *)sqlite3_column_text(statement,i)];
+                        [thisDict setObject:result
+                                     forKey:[NSString stringWithUTF8String:sqlite3_column_name(statement,i)]];
+                        [result release];
+                        result = nil;
 					}
 				}
 				if (result) {
