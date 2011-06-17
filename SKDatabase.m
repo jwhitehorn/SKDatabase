@@ -100,7 +100,8 @@
 	sqlite3_stmt *statement;
 	id result;
 	NSMutableArray *thisArray = [NSMutableArray arrayWithCapacity:4];
-	if (statement = [self prepare:sql]) {
+    statement = [self prepare:sql];
+	if (statement) {
 		while (sqlite3_step(statement) == SQLITE_ROW) {	
 			NSMutableDictionary *thisDict = [NSMutableDictionary dictionaryWithCapacity:4];
 			for (int i = 0 ; i < sqlite3_column_count(statement) ; i++) {
