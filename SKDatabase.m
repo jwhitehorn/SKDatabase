@@ -140,20 +140,27 @@
 	sqlite3_stmt *statement;
 	id result;
 	NSMutableDictionary *thisDict = [NSMutableDictionary dictionaryWithCapacity:4];
-	if (statement = [self prepare:sql]) {
+    statement = [self prepare:sql];
+	if (statement) {
 		if (sqlite3_step(statement) == SQLITE_ROW) {	
 			for (int i = 0 ; i < sqlite3_column_count(statement) ; i++) {
-				if (strcasecmp(sqlite3_column_decltype(statement,i),"Boolean") == 0) {
+				if(sqlite3_column_type(statement,i) == SQLITE_NULL){
+					continue;
+				}
+				if (sqlite3_column_decltype(statement,i) != NULL &&
+					strcasecmp(sqlite3_column_decltype(statement,i),"Boolean") == 0) {
 					result = [NSNumber numberWithBool:(BOOL)sqlite3_column_int(statement,i)];
-				} else if (sqlite3_column_type(statement, i) == SQLITE_TEXT) {
-					result = [NSString stringWithUTF8String:(char *)sqlite3_column_text(statement,i)];
 				} else if (sqlite3_column_type(statement,i) == SQLITE_INTEGER) {
 					result = [NSNumber numberWithInt:(int)sqlite3_column_int(statement,i)];
 				} else if (sqlite3_column_type(statement,i) == SQLITE_FLOAT) {
 					result = [NSNumber numberWithFloat:(float)sqlite3_column_double(statement,i)];					
 				} else {
 					if((char *)sqlite3_column_text(statement,i) != NULL){
-						result = [NSString stringWithUTF8String:(char *)sqlite3_column_text(statement,i)];
+                        result = [[NSString alloc] initWithUTF8String:(char *)sqlite3_column_text(statement,i)];
+                        [thisDict setObject:result
+                                     forKey:[NSString stringWithUTF8String:sqlite3_column_name(statement,i)]];
+                        [result release];
+                        result = nil;
 					}
 				}
 				if (result) {
