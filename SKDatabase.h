@@ -1,4 +1,4 @@
-// Copyright 2011 Jason Whitehorn
+// Copyright 2011-2012 Jason Whitehorn
 // Released under the terms of the license found
 // in the license.txt in the root of the project
 
