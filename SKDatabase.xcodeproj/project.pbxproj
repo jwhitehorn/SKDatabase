@@ -19,6 +19,7 @@
 		9630013812D8FA2500413489 /* SKDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDatabase.m; sourceTree = SOURCE_ROOT; };
 		9630018E12D8FA5D00413489 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		9630019D12D8FBB300413489 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		96C66B4514B5E6F8001CC3A9 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* SKDatabase_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKDatabase_Prefix.pch; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libSKDatabase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSKDatabase.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +49,7 @@
 		0867D691FE84028FC02AAC07 /* SKDatabase */ = {
 			isa = PBXGroup;
 			children = (
+				96C66B4514B5E6F8001CC3A9 /* README.markdown */,
 				9630013712D8FA2500413489 /* SKDatabase.h */,
 				9630013812D8FA2500413489 /* SKDatabase.m */,
 				AA747D9E0F9514B9006C5449 /* SKDatabase_Prefix.pch */,
