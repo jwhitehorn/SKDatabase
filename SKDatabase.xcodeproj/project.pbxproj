@@ -10,7 +10,6 @@
 		9630013912D8FA2600413489 /* SKDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 9630013712D8FA2500413489 /* SKDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9630013A12D8FA2600413489 /* SKDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9630013812D8FA2500413489 /* SKDatabase.m */; };
 		9630018F12D8FA5D00413489 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9630018E12D8FA5D00413489 /* libsqlite3.0.dylib */; };
-		AA747D9F0F9514B9006C5449 /* SKDatabase_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* SKDatabase_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,7 +19,6 @@
 		9630018E12D8FA5D00413489 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		9630019D12D8FBB300413489 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
 		96C66B4514B5E6F8001CC3A9 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
-		AA747D9E0F9514B9006C5449 /* SKDatabase_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKDatabase_Prefix.pch; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libSKDatabase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSKDatabase.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -52,7 +50,6 @@
 				96C66B4514B5E6F8001CC3A9 /* README.markdown */,
 				9630013712D8FA2500413489 /* SKDatabase.h */,
 				9630013812D8FA2500413489 /* SKDatabase.m */,
-				AA747D9E0F9514B9006C5449 /* SKDatabase_Prefix.pch */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 				9630019D12D8FBB300413489 /* license.txt */,
@@ -76,7 +73,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA747D9F0F9514B9006C5449 /* SKDatabase_Prefix.pch in Headers */,
 				9630013912D8FA2600413489 /* SKDatabase.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
