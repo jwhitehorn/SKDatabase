@@ -23,7 +23,7 @@
 	BOOL dynamic;
 }
 
-@property (assign) id<SKDatabaseDelegate> delegate;
+@property (nonatomic, retain) id<SKDatabaseDelegate> delegate;
 @property sqlite3 *dbh;
 @property BOOL dynamic;
 

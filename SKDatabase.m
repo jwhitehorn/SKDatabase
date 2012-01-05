@@ -120,7 +120,6 @@
                         result = [[NSString alloc] initWithUTF8String:(char *)sqlite3_column_text(statement,i)];
                         [thisDict setObject:result
                                      forKey:[NSString stringWithUTF8String:sqlite3_column_name(statement,i)]];
-                        [result release];
                         result = nil;
 					}
 				}
@@ -159,7 +158,6 @@
                         result = [[NSString alloc] initWithUTF8String:(char *)sqlite3_column_text(statement,i)];
                         [thisDict setObject:result
                                      forKey:[NSString stringWithUTF8String:sqlite3_column_name(statement,i)]];
-                        [result release];
                         result = nil;
 					}
 				}
@@ -407,8 +405,6 @@
 
 - (NSString *)escapeString:(NSString *)dirtyString{
 	NSString *cleanString = [dirtyString stringByReplacingOccurrencesOfString:@"'" withString:@"''"];
-	[cleanString autorelease];
-	
 	return cleanString;
 }
 
@@ -416,8 +412,6 @@
 
 - (void)dealloc {
 	[self close];
-	[delegate release];
-	[super dealloc];
 }
 
 - (void)close {
