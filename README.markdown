@@ -22,6 +22,6 @@ Using SKDatabase
 
 The core of SKDatabase (and frankly the _only_ of SKDatabase) is the SKDatabase class. This class represents your connection to a SQLite database. To initialize your database connection use one of the following:
 
-- (id)initWithFile:(NSString *)dbFile;
-- (id)initWithReadOnlyFile:(NSString *)dbFile;
-- (id)initWithData:(NSData *)data andFile:(NSString *)dbFile;
+- `(id)initWithFile:(NSString *)dbFile`
+- `(id)initWithReadOnlyFile:(NSString *)dbFile`
+- `(id)initWithData:(NSData *)data andFile:(NSString *)dbFile`
