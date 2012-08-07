@@ -27,36 +27,39 @@
 @property sqlite3 *dbh;
 @property BOOL dynamic;
 
+/*
+ * Initializes the DB with the name of a database file bundled with the application.
+ */
 - (id)initWithFile:(NSString *)dbFile;
-- (id)initWithReadOnlyFile:(NSString *)dbFile;
+
+/*
+ * Initializes the DB with the contents of an NSData, and writes it's contents out to the specified file.
+ */
 - (id)initWithData:(NSData *)data andFile:(NSString *)dbFile;
 
+/*
+ * Close the database connect.
+ */
 - (void)close;
 
-- (sqlite3_stmt *)prepare:(NSString *)sql;
-
+/*
+ * Executes the supplied SQL, and returns a single column.
+ */
 - (id)lookupColForSQL:(NSString *)sql;
+
+/*
+ * Executes the supplied SQL, and returns a single row.
+ */
 - (NSDictionary *)lookupRowForSQL:(NSString *)sql;
+
+/*
+ * Executes the supplied SQL, and returns everything.
+ */
 - (NSArray *)lookupAllForSQL:(NSString *)sql;
 
-- (int)lookupCountWhere:(NSString *)where forTable:(NSString *)table;
-- (int)lookupMax:(NSString *)key Where:(NSString *)where forTable:(NSString *)table;
-- (int)lookupSum:(NSString *)key Where:(NSString *)where forTable:(NSString *)table;
-
-- (void)insertArray:(NSArray *)dbData forTable:(NSString *)table;
-- (void)insertDictionary:(NSDictionary *)dbData forTable:(NSString *)table;
-
-- (void)updateArray:(NSArray *)dbData forTable:(NSString *)table;
-- (void)updateArray:(NSArray *)dbData forTable:(NSString *)table where:(NSString *)where;
-- (void)updateDictionary:(NSDictionary *)dbData forTable:(NSString *)table;
-- (void)updateDictionary:(NSDictionary *)dbData forTable:(NSString *)table where:(NSString *)where;
-- (void)updateSQL:(NSString *)sql forTable:(NSString *)table;
-
-- (void)deleteWhere:(NSString *)where forTable:(NSString *)table;
-- (void) deleteAllFrom:(NSString *)table;
-
-- (BOOL)runDynamicSQL:(NSString *)sql forTable:(NSString *)table;
-
+/*
+ * Escape a string. Useful for preparing SQL statements.
+ */
 - (NSString *)escapeString:(NSString *)dirtyString;
 
 @end
