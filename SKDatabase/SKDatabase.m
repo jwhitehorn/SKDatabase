@@ -169,6 +169,10 @@
 	
 }
 
+- (void) performSQL:(NSString *)sql{
+    [self lookupColForSQL:sql];
+}
+
 - (NSString *)escapeString:(NSString *)dirtyString{
 	NSString *cleanString = [dirtyString stringByReplacingOccurrencesOfString:@"'" withString:@"''"];
 	return cleanString;

@@ -57,6 +57,12 @@
  */
 - (NSArray *)lookupAllForSQL:(NSString *)sql;
 
+
+/*
+ * Executes the supplied SQL, returning nothing.
+ */
+- (void) performSQL:(NSString *)sql;
+
 /*
  * Escape a string. Useful for preparing SQL statements.
  */
